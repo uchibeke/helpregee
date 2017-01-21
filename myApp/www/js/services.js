@@ -7,28 +7,15 @@ angular.module('starter.services', [])
   var chats = [{
     id: 0,
     name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'img/ben.png'
+    address: '1st. Columbia Street, Toronto',
+    face: 'img/ben.png',
+    items: [{name: "2% Skim Milk", qty: "2"}, {name: "Tomato Ketchup", qty: "1"}]
   }, {
     id: 1,
     name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'img/max.png'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'img/adam.jpg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'img/perry.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'img/mike.png'
+    address: '3rd. Tom Street, Waterloo',
+    face: 'img/max.png',
+      items: [{name: "Soup", qty: "2"}, {name: "Tomato Ketchup", qty: "1"}]
   }];
 
   return {

@@ -6,9 +6,23 @@
 -->
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
+    <img ng-src="{{chat.face}}" style="display:block; margin:0 auto; height: 30%;">
+    <p id="address">{{chat.address}}</p> 
+      <p id="itemtext">Items needed : </p>
+      <ion-item class="items" ng-repeat="i in chat.items">{{i.name}}: {{i.qty}} </ion-item>
+      
+
+      
     </p>
+    <style>
+    #address {
+      text-align:center;
+    }
+
+    #itemtext,.items{
+      text-align:center;
+    }
+    </style>
+
   </ion-content>
 </ion-view>
