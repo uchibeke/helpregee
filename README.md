@@ -1,8 +1,8 @@
 # helpregee
-Sugata Acharjya
-Uchi Uchibeke
-Nikshep Svn
-Basim Sahaf
+- Sugata Acharjya
+- Uchi Uchibeke
+- Nikshep Svn
+- Basim Sahaf
 
 ## About
 
