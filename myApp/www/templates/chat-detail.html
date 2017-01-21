@@ -1,28 +1,35 @@
 <!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
+This template loads for the 'tab.friend-detail' state (app.js)
+'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+The FriendsCtrl pulls data from the Friends service (service.js)
+The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="display:block; margin:0 auto; height: 30%;">
-    <p id="address">{{chat.address}}</p> 
-      <p id="itemtext">Items needed : </p>
-      <ion-item class="items" ng-repeat="i in chat.items">{{i.name}}: {{i.qty}} </ion-item>
-      
+	<ion-content class="padding">
+		<img ng-src="{{chat.face}}" style="display:block; margin:0 auto; height: 30%;">
+		<p id="address">
+			{{chat.address}}
+		</p>
+		<p id="itemtext">
+			Items needed :
+		</p>
+		<ion-item class="items" ng-repeat="i in chat.items">
+			{{i.name}}: {{i.qty}}
+		</ion-item>
 
-      
-    </p>
-    <style>
-    #address {
-      text-align:center;
-    }
+		<div data-bttnio-id="btn-24cb4c3b297f1b6f"
+		data-bttnio-context='{ "item": { "identifiers": { "jet": "b07b0650208c4dfabf99277e863d5c51" } } }'></div>
+		
+		</p>
+		<style>
+			#address {
+				text-align: center;
+			}
 
-    #itemtext,.items{
-      text-align:center;
-    }
-    </style>
+			#itemtext, .items {
+				text-align: center;
+			}
+		</style>
 
-  </ion-content>
+	</ion-content>
 </ion-view>
